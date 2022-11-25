@@ -1,0 +1,319 @@
+.landing{
+    font-size: 1.6rem;
+  background-color: #151618;
+  width: 100%;
+  padding: 5.1rem 9rem;
+  background-image: url('/images/landindBg.png');
+
+  h1{
+    color: #FFFFFF ;
+  }
+
+  .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF ;
+    border-radius: 5px 15px;
+    width: 141px;
+    height: 48px;
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
+  .bg{
+    height: 70.933rem;
+    left: 18.2rem;
+    top: 24.3rem;
+    background-image: url('/images/landingBg.png');
+    background-position: 100% 16rem;
+    background-repeat: no-repeat;
+  }
+
+  p{
+    color: #CECECE;
+  }
+
+  span{
+    color: #CECECE;
+  }
+
+  .logo{
+    height: 3.568rem;
+  }
+
+  .menus{
+    .menu{
+        font-weight: 400;
+      cursor: pointer;
+      color: #CECECE;
+    }
+  }
+
+  .content{
+    padding: 40px;
+    .contentRow{
+      margin-top: 5rem;
+    }
+
+    .startEarning{
+      min-width: 42.4rem;
+      max-width: 50rem;
+      margin-top: 5rem;
+      span{
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+    .statistics{
+      margin-top: 5rem;
+      height: 14rem;
+      background: rgba(156, 183, 217, 0.05);
+      border: 1px solid #3F4449;
+      backdrop-filter: blur(.4rem);
+      border-radius: .5rem 2rem;
+      // align-items: center;
+      // justify-content: center;
+      .item{
+        border-right: .1rem solid #3F4449;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+            color: #19FB80;
+        }
+        .imgName{
+          img{
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+
+    .loremipsum{
+      margin-top: 10.6rem;
+      height: 83px;
+      font-family: 'Kanit';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 45px;
+      line-height: 80px;
+      color: #FFFFFF;
+      span{
+        color: #19FB80;
+      }
+    }
+
+    .loremipsumItem{
+      .strongbox{
+        background: #252A31;
+        border-radius: 12px;
+        padding: 1.5rem;
+      }
+      h1{
+        margin-top: 1.8rem;
+        color: #FFFFFF;
+      }
+      span{
+        font-family: 'Kanit';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.6rem;
+        color: #CECECE;
+      }
+
+    }
+
+    .loremSectetur{
+      height: 45.8rem;
+      width: 50rem;
+      display: flex;
+      flex-direction: column;
+      align-items:flex-start;
+      justify-content: center;
+      img{
+        margin-top: 20px;
+      }
+    }
+
+    .card{
+      border-radius: 20px;
+      border: 1px solid #323736;
+      width: 46rem;
+      height: 45.8rem;
+      .title{
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        height: 10rem;
+        border-bottom: 1px solid #323736;
+
+        .strongbox{
+          background: #252A31;
+          border-radius: 12px;
+          padding: 1.5rem;
+          margin-right: 2rem;
+        }
+      }
+      .content{
+        padding: 2rem;
+        .row{
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          background: #1B1F24;
+          padding: 1.2rem;
+          border: 1px solid #323736;
+          border-radius: 20px;
+          .descNumber{
+            .desc{
+              font-family: 'Kanit';
+              font-style: normal;
+              font-weight: 300;
+              font-size: 1.2rem;
+              color: #CECECE;
+            }
+            .number{
+              color: #CECECE;
+              font-weight: 600;
+              font-size: 2.2rem;
+            }
+          }
+        }
+      }
+    }
+
+
+    .howCard{
+        width: 100%;
+        height: 438px;
+        background: #1B1F24;
+        border: 1px solid #323736;
+        border-radius: 30px;
+        padding: 40px;
+        margin-top: 10rem;
+        .how{
+          width: 318px;
+          background: linear-gradient(179.54deg, #19FB80 0.4%, #13BA5E 99.63%);
+          border-radius: 10px 30px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          padding: 4rem;
+          div{
+            margin-bottom: 2rem;
+            font-family: 'Kanit';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 6rem;
+            color: #1B1F24;
+            line-height: 65px;
+          }
+          span{
+            font-family: 'Kanit';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            text-align: center;
+            color: #04040A;
+            font-weight: 400;
+          }
+        }
+
+        .col{
+          width: 30.1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          img{
+            margin-right: 20px;
+          }
+          span{
+            font-family: 'Kanit';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 39px;
+          }
+          div{
+            color: #CECECE;
+          }
+
+        }
+    }
+
+
+    .news{
+      width: 100%;
+      justify-content: space-around;
+
+      .newsItem{
+        width: 36.6rem;
+        .img{
+          width: 365px;
+          height: 272px;
+          left: 542px;
+          top: 2910px;
+          background: #1B1F24;
+          border-radius: 20px;
+          border: 1px solid #323736;
+        }
+        p{
+            font-family: 'Kanit';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 36px;
+            color: #FFFFFF;
+            margin-top: 20px;
+        }
+      }
+    }
+
+
+
+    .greenBtn{
+      display: flex;
+      padding: 12px 32px;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      font-weight: 600;
+      width: 163px;
+      height: 56px;
+
+      background: #19FB80;
+      border-radius: 5px 15px;
+    }
+
+
+
+
+  }
+
+  .foot{
+    padding: 3rem 8rem;
+    height: 30rem;
+    border-top: 1px solid #FFFFFF;
+    opacity: 0.6;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+
+    .footItem{
+      width: 30rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      p{
+        margin-top: 20px;
+      }
+    }
+  } 
+}

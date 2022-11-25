@@ -1,8 +1,23 @@
+import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { useTranslation, Trans } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import type { GetStaticProps, InferGetStaticPropsType } from 'next'
+import { useRouter } from 'next/router'
 
-export default function Home() {
+import Link from 'next/link'
+type Props = {
+  // Add custom props here
+}
+
+export default function Home(props:any) {
+  const lazyRoot = React.useRef(null)
+  const { t } = useTranslation('common')
+  const router = useRouter()
+
+  const changeTo = router.locale === 'en' ? 'ZH_CN' : 'en'
   return (
     <div className={styles.container}>
       <Head>
@@ -13,12 +28,19 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
+          Welcome to <a href="https://nextjs.org">Next.js!{t('blog.optimized.question')}</a>
+         </h1>
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.tsx</code>
+          <Link
+            href='/'
+            locale={changeTo}
+          >
+            <button>
+              {t('change-locale', { changeTo })}
+            </button>
+          </Link>
         </p>
 
         <div className={styles.grid}>
@@ -69,3 +91,8 @@ export default function Home() {
     </div>
   )
 }
+export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => ({
+  props: {
+    ...await serverSideTranslations(locale ?? 'en', ['common', 'footer']),
+  },
+})
